@@ -1,0 +1,12 @@
+/* slider.css */
+
+/* Adjust the image size as needed */
+.custom-slider img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Add any additional styling for captions, etc. */
+.custom-slider p {
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-item {
+  width: auto;
+  height: 28rem;
+}
+
+.image1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Assets/Drinks3.jpg") no-repeat 50% center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.image4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Assets/Drinks2.jpg") no-repeat 50% center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#services-body-1 {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+#services-body-2 {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    display: flex; /* Adjust as needed for your design */
+    flex-direction: column;
+  }
+  .services-item {
+    margin: 2rem 0;
+  }
+
+  #services-body-1 {
+    margin: 3rem 1rem;
+  }
+
+  #services-body-2 {
+    margin: 3rem 1rem;
+  }
+}

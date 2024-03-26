@@ -1,0 +1,39 @@
+.hero-container {
+  width: 100%;
+  display: flex;
+  height: 35rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Assets/Stand1.jpg") no-repeat 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+.hero-body {
+  width: 50%;
+}
+
+.hero-heading {
+  font-size: 3rem;
+}
+
+.hero-button {
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-body {
+    width: 90%; /* Adjust as needed for smaller screens */
+  }
+
+  .hero-heading {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+}

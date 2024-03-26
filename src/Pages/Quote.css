@@ -1,0 +1,17 @@
+.quote-outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 23rem !important;
+}
+
+.quote-container {
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 40rem;
+  height: auto;
+  padding: 2rem;
+  text-align: left;
+  color: white;
+}

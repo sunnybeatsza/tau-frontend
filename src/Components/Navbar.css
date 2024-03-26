@@ -1,0 +1,96 @@
+.navbar-container a {
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+}
+
+.navbar-container li {
+  list-style: none;
+  display: inline;
+  margin-right: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  height: 3rem;
+}
+
+.navbar-container ul {
+  margin-top: 1rem;
+}
+
+.navbar-logo {
+  font-size: x-large;
+  margin-left: 2rem;
+}
+
+.sidebar-active {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.sidebar-inactive {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.sidebar li {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.open-close-button {
+  display: none;
+}
+/* Your existing styles */
+
+/* Styles for smaller screens */
+@media screen and (max-width: 1147px) {
+  .open-close-button {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar-container {
+    flex-wrap: nowrap;
+  }
+
+  #main-nav {
+    display: none;
+  }
+
+  .navbar-logo {
+    margin-right: 1rem;
+    margin-left: 0px;
+  }
+}
