@@ -43,6 +43,30 @@ export const CheckoutCard = () => {
         <i class="fa-solid fa-calendar-days mx-3 my-1"></i>
         {formValues.DateTime}
       </p>
+
+      <p>
+        <i class="fa-regular fa-envelope mx-3 my-1"></i>
+        {formValues.Email}
+      </p>
+
+      <p>
+        <i class="fa-solid fa-phone mx-3 my-1"></i>0{formValues.PhoneNumber}
+      </p>
+
+      <p>
+        <i class="fa-solid fa-address-book mx-3 my-1"></i>
+        {formValues.FirstName}
+      </p>
+
+      <p>
+        <i class="fa-solid fa-address-book mx-3 my-1"></i>
+        {formValues.LastName}
+      </p>
+
+      <p>
+        <i class="fa-solid fa-note-sticky mx-3 my-1"></i>
+        {formValues.AdditionalNotes}
+      </p>
     </div>
   );
 };

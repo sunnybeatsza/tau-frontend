@@ -14,15 +14,15 @@ export const Checkout = () => {
       <div className="checkout-outer-flex">
         <div className="checkout-outer-container">
           <div className="checkout-top-container">
-            <h3>YOUR ENQUIRY</h3>
-            <p>Enquires are valid for 30 days</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>YOUR QUOTE</h3>
+            <p>Quotes are valid for 30 days</p>
+            <p>
+              The quote information will be sent to one of our managers and
+              response will be given in 2-3 working days
+            </p>
           </div>
           <div className="checkout-bottom-container">
             <CheckoutCard />
-            <div className="quote-total">
-              <button className="btn btn-primary my-2">Send Enquiry</button>
-            </div>
           </div>
         </div>
       </div>

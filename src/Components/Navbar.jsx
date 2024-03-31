@@ -17,19 +17,19 @@ export const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#About-us">About Us</a>
+          <a href="/#About-us">About Us</a>
         </li>
         <li>
-          <a href="#Services">Services</a>
+          <a href="/#Services">Services</a>
         </li>
         <li>
-          <a href="#Events">Events</a>
+          <a href="/#Events">Events</a>
         </li>
         <li>
           <Link to="/Quote">Quote</Link>
         </li>
         <li>
-          <a href="#Contact">Contact us</a>
+          <a href="/#Contact">Contact us</a>
         </li>
       </ul>
       <button

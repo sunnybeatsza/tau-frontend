@@ -40,13 +40,7 @@ export default function SimpleSlider() {
                 type="button"
                 className="btn btn-primary btn-lg px-4 gap-3"
               >
-                Primary button
-              </button>
-              <button
-                type="button"
-                className="btn btn-outline-secondary btn-lg px-4"
-              >
-                Secondary
+                Learn more
               </button>
             </div>
           </div>

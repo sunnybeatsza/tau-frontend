@@ -4,9 +4,12 @@ import { Navbar } from "../Components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export const Quote = () => {
   const [formValues, setFormValues] = useState([]);
+  const form = useRef();
 
   const navigate = useNavigate();
   const formik = useFormik({
@@ -18,10 +21,16 @@ export const Quote = () => {
       DrinkOptions: "",
       Duration: "",
       DateTime: "",
+      Email: "",
+      PhoneNumber: "",
+      FirstName: "",
+      LastName: "",
+      AdditionalNotes: "",
     },
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
       setFormValues(values);
+      sendEmail(values);
       navigate("/Checkout", { state: { formValues: values } });
     },
   });
@@ -29,6 +38,23 @@ export const Quote = () => {
   const GoBack = () => {
     navigate("/");
   };
+  const sendEmail = (values) => {
+    emailjs
+      .sendForm("Contact_service", "Contact_form", form.current, {
+        publicKey: "cLGsKTwuRgLuquZfF",
+      })
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  };
+
+  const drinkOptions =
+    formik.values.DrinkPref === "Alcoholic"
+      ? ["Vodka", "Rum", "Cognac", "Gin", "Whiskey", "Champagne"]
+      : ["Juice", "SoftDrinks", "Water", "Sparkling Water"]; // Example non-alcoholic options
   return (
     <div>
       <Navbar />
@@ -38,7 +64,7 @@ export const Quote = () => {
           <button className="btn btn-primary text-light mb-3" onClick={GoBack}>
             Go Back
           </button>
-          <form onSubmit={formik.handleSubmit}>
+          <form ref={form} onSubmit={formik.handleSubmit}>
             <h3>Guests</h3>
             <div className="quote-container-top">
               <label htmlFor="Guests">
@@ -124,8 +150,11 @@ export const Quote = () => {
                 value={formik.values.DrinkOptions}
               >
                 <option value="Select an option">Select an option</option>
-                <option value="Vodka">Vodka</option>
-                <option value="Rum">Rum</option>
+                {drinkOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
               </select>
             </div>
             <hr />
@@ -162,8 +191,77 @@ export const Quote = () => {
               />
             </div>
             <hr />
+            <div>
+              <h3>Contact Details</h3>
+              <label for="Email" className="me-2">
+                Email
+              </label>
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                className="my-3"
+                onChange={formik.handleChange}
+                value={formik.values.Email}
+              />
+            </div>
+
+            <div>
+              <label for="PhoneNumber" className="me-2">
+                Phone Number
+              </label>
+              <input
+                type="number"
+                name="PhoneNumber"
+                id="PhoneNumber"
+                className="my-3"
+                onChange={formik.handleChange}
+                value={formik.values.PhoneNumber}
+              />
+            </div>
+            <div>
+              <label for="FirstName" className="me-2">
+                First Name
+              </label>
+              <input
+                type="text"
+                name="FirstName"
+                id="FirstName"
+                className="my-3"
+                onChange={formik.handleChange}
+                value={formik.values.FirstName}
+              />
+            </div>
+
+            <div>
+              <label for="LastName" className="me-2">
+                Last Name
+              </label>
+              <input
+                type="text"
+                name="LastName"
+                id="LastName"
+                className="my-3"
+                onChange={formik.handleChange}
+                value={formik.values.LastName}
+              />
+            </div>
+
+            <div>
+              <label for="AdditionalNotes" className="me-2">
+                Additional Notes
+              </label>
+              <input
+                type="textarea"
+                name="AdditionalNotes"
+                id="AdditionalNotes"
+                className="my-3"
+                onChange={formik.handleChange}
+                value={formik.values.AdditionalNotes}
+              />
+            </div>
             <button className="btn btn-primary" type="submit">
-              Checkout
+              Review
             </button>
           </form>
         </div>

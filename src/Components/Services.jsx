@@ -13,18 +13,11 @@ export const Services = () => {
             ducimus rem vel voluptatibus numquam, dicta similique porro sint
             esse, temporibus quidem. Magni, quos recusandae a autem perferendis
             temporibus quod!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
-            sint consequatur, dolor obcaecati, velit autem et fugit voluptas
-            aliquam voluptatum perferendis eaque esse. Quae dolorum voluptates
-            recusandae ipsa repellat ipsam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            reiciendis maiores nesciunt rerum, impedit quibusdam ut qui
-            perferendis architecto tempora aspernatur deserunt voluptas
-            officiis, aliquam quis explicabo culpa. Facilis, distinctio.
+            <br />
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+            magnam ratione atque earum facilis soluta animi harum, ipsam magni
+            fuga eligendi est vero corrupti rem voluptatem nam tenetur! Sunt,
+            ipsum!
           </p>
         </div>
         <div className="services-item " id="services-body-2">
@@ -34,20 +27,12 @@ export const Services = () => {
             quae expedita adipisci repellat temporibus quam veritatis qui
             molestiae modi eos reiciendis accusantium error architecto neque,
             tempora id libero excepturi ad.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-            labore error, itaque repudiandae possimus alias expedita soluta
-            maiores commodi, similique tenetur impedit aut? Laborum cum
-            aspernatur, numquam sapiente sunt voluptate.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            impedit. Laboriosam temporibus aliquid, nemo dolores totam
-            praesentium fugit sit minima debitis vel eveniet impedit! Ipsa
-            ratione quibusdam suscipit rem fugiat.
+            <br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perferendis architecto perspiciatis earum suscipit explicabo. Culpa
+            eligendi quaerat distinctio placeat dolorum nemo pariatur
+            reprehenderit facilis, expedita nulla aperiam exercitationem enim
+            ad!
           </p>
         </div>
         <div className="services-item image4">4</div>

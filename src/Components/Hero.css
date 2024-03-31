@@ -37,3 +37,7 @@
     font-size: 2rem; /* Adjust font size for smaller screens */
   }
 }
+
+a {
+  text-decoration: none;
+}
