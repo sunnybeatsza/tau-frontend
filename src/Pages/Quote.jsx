@@ -10,6 +10,7 @@ import { useRef } from "react";
 export const Quote = () => {
   const [formValues, setFormValues] = useState([]);
   const form = useRef();
+  const [quoteNumber, setQuoteNumber] = useState(generateQuoteNumber());
 
   const navigate = useNavigate();
   const formik = useFormik({
@@ -26,6 +27,7 @@ export const Quote = () => {
       FirstName: "",
       LastName: "",
       AdditionalNotes: "",
+      quoteNumber: `${quoteNumber}`,
     },
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -38,6 +40,11 @@ export const Quote = () => {
   const GoBack = () => {
     navigate("/");
   };
+
+  function generateQuoteNumber() {
+    // Generate a random quote number (e.g., a random 6-digit number)
+    return Math.floor(100000 + Math.random() * 900000);
+  }
   const sendEmail = (values) => {
     emailjs
       .sendForm("Contact_service", "Contact_form", form.current, {
@@ -258,6 +265,20 @@ export const Quote = () => {
                 className="my-3"
                 onChange={formik.handleChange}
                 value={formik.values.AdditionalNotes}
+              />
+            </div>
+
+            <div>
+              <label for="quoteNumber" className="me-2">
+                Quote Number
+              </label>
+              <input
+                type="number"
+                name="quoteNumber"
+                id="quoteNumber"
+                className="my-3"
+                onChange={formik.handleChange}
+                value={formik.values.quoteNumber}
               />
             </div>
             <button className="btn btn-primary" type="submit">

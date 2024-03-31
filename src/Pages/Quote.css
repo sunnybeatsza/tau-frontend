@@ -16,3 +16,10 @@
   color: white;
   margin-top: 23rem !important;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+  .quote-container {
+    width: 90%;
+    margin-top: auto !important;
+  }
+}
