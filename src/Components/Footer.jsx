@@ -20,26 +20,6 @@ export const Footer = () => {
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2">
-                Features
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2">
-                FAQs
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2">
-                About
-              </a>
-            </li>
           </ul>
         </footer>
       </div>

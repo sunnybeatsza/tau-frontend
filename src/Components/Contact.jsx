@@ -30,10 +30,9 @@ export const Contact = () => {
               Contact Us
             </h1>
             <p className="text-light fs-4">
-              Below is an example form built entirely with Bootstrap’s form
-              controls. Each required form group has a validation state that can
-              be triggered by attempting to submit the form without completing
-              it.
+              If you have any questions or concerns, please feel free to contact
+              us. We are here to help. We will get back to you as soon as
+              possible. We love to connect with our customers.
             </p>
           </div>
           <div className="col-md-10 mx-auto col-lg-5">

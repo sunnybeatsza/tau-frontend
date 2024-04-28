@@ -14,16 +14,14 @@ export const AboutUs = () => {
         <div className="col-lg-6 mx-auto">
           <p className="lead mb-3">Taustwako Exquisite cocktails</p>
           <p className="">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            laudantium! Quisquam maiores consequatur officia minus, mollitia
-            adipisci? Illum qui deleniti, sunt non sed nihil vel, quia
-            exercitationem, eveniet minima mollitia!
+            "We are a mobile bar known for crafting meticulously engineered,
+            exquisite drinks with a touch of passion, creativity, and unique
+            style. Our team brings the party to you, creating a vibrant
+            atmosphere that perfectly complements your event. Whether it's an
+            intimate gathering or a grand celebration, we deliver a memorable
+            cocktail experience that is as dynamic and unique as you are."
           </p>
-          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" className="btn btn-primary btn-lg px-4 gap-3">
-              Learn More
-            </button>
-          </div>
+          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
         </div>
       </div>
     </div>

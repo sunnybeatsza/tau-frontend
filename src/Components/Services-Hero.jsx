@@ -7,16 +7,18 @@ export const ServicesHero = () => {
         <h1 className="display-5 fw-bold text-light">Services</h1>
         <div className="col-lg-6 mx-auto">
           <p className="text-light mb-4">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+            Of course, here's a refined version of your description: "Our mobile
+            cocktail bar is designed to elevate any event, from elegant weddings
+            and sophisticated birthday parties to intimate baby showers and
+            beyond. We specialize in creating unforgettable experiences for
+            discerning clients, offering a curated selection of premium
+            cocktails and a seamless, stylish setup. Whether it's a grand
+            celebration or a more intimate gathering, our team is dedicated to
+            providing impeccable service and customized drink options that suit
+            your unique taste. Let us bring a touch of luxury to your next
+            event."
           </p>
-          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" className="btn btn-primary btn-lg px-4 gap-3">
-              Learn more
-            </button>
-          </div>
+          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
         </div>
       </div>
     </div>
